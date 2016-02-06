@@ -174,8 +174,9 @@ body {
 
 .frame{
   position: fixed;
-  height: 95%;
-  width: 65%;
-  margin-left: 370px;
+  height: 65%;
+  width: 35%;
+  margin-left: 250px;
+  top: 16%;
   z-index: 3;
 }
