@@ -1,12 +1,11 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
 require('../includes/init.php');
-/*if(!check_login())
-	header('location: ../index.php'); 
-else { */
-$username = get_username();
-$enroll = get_enroll();
-	echo "Welcome ".$username.", <a href='../logout.php'>Logout</a>";
+if(!check_login())
+	header('location: ../index.php');
+else {
+	$username = get_username();
+	$enroll = get_enroll();
+echo "Welcome ".$username.", <a href='../logout.php'>Logout</a>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,6 +16,12 @@ $enroll = get_enroll();
 <title>Chatroom</title>
 </head>
 <body>
+        <div id="chat_room">
+                <h2>Chatroom 1</h2>
+                <a href="chat.php" onClick="joinGroup()">Join</a>
+                <div id="chat_room_dialog">
+                </div>
+        </div>
 	<div id="online_box" class="online">
 		<audio controls="controls" style="display:none;" id="soundHandle"></audio>  <!--this tag is for chat sound	-->
 		<div id="online_title_box" class="online" >
@@ -37,4 +42,5 @@ $enroll = get_enroll();
 </body>
 </html>
 <?php
+}
 ?>

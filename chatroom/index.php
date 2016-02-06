@@ -9,7 +9,7 @@ if(check_login()==true){
 <body>
 <table>
 <tr>
-<form action="chat/chat.php" method="POST" >
+<form action="login.php" method="POST" >
 <td>Enrollment:</td> <td><input type="text" name="user"></td>
 </tr>
 <tr>
