@@ -55,7 +55,7 @@ function moveAround()
 /*Show the messenger*/
 function message()
 {
-	$("div").append("<iframe frameborder = '0' class = 'frame' src='Chatroom-master/index.php'></iframe>");
+	$("div").append("<iframe frameborder = '0' class = 'frame' src='Chat/index.php'></iframe>");
 }
 
 moveAround();
