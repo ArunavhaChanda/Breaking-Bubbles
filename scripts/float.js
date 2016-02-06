@@ -52,21 +52,11 @@ function moveAround()
 	
 } 
 
-/*expand*/
-/*function expansion(e)
+/*Show the messenger*/
+function message()
 {
-	shouldMoveAround = false;
-	var bounce = $('#bounceEffect');
-	bounce.remove();
-	var bubble = e.target;
-	bubble.stop().animate({
-		width: '70%',
-		height: '140%',
-		left: $(window).width()/8.5,
-		top: '-20%'
-	}, 500); 
-	//shouldMoveAround = true;
-}*/
+	$("div").append("<iframe frameborder = '0' class = 'frame' src='Chatroom-master/index.php'></iframe>");
+}
 
 moveAround();
 
@@ -82,9 +72,13 @@ bub1.on('click', function(){
 		top: '-20%'
 	}, 500); 
 
+	//remove words
+	$('.title').remove();
+	$('#footer').fadeOut();
 	bub2.fadeOut();
 	bub3.fadeOut();
 	bub4.fadeOut();
+	message();
 });
 bub2.on('click', function(){
 	shouldMoveAround = false;
@@ -97,9 +91,12 @@ bub2.on('click', function(){
 		top: '-20%'
 	}, 500); 
 
+	$('.title').remove();
+	$('#footer').fadeOut();
 	bub1.fadeOut();
 	bub3.fadeOut();
 	bub4.fadeOut();
+	message();
 });
 bub3.on('click', function(){
 	shouldMoveAround = false;
@@ -112,9 +109,12 @@ bub3.on('click', function(){
 		top: '-20%'
 	}, 500); 
 
+	$('.title').remove();
+	$('#footer').fadeOut();
 	bub1.fadeOut();
 	bub2.fadeOut();
 	bub4.fadeOut();
+	message();
 });
 bub4.on('click', function(){
 	shouldMoveAround = false;
@@ -127,7 +127,55 @@ bub4.on('click', function(){
 		top: '-20%'
 	}, 500); 
 
+	$('.title').remove();
+	$('#footer').fadeOut();
 	bub1.fadeOut();
 	bub2.fadeOut();
 	bub3.fadeOut();
+	message();
 });
+
+function togglestyle1(el){
+    if(el.className == "on1") {
+    	el.className="off1";
+    } else {
+    	el.className="on1";
+    }
+    bub2.fadeOut();
+    bub3.fadeOut();
+    bub4.fadeOut();
+    message();
+}
+
+function togglestyle2(el){
+    if(el.className == "on2") {
+        el.className="off2";
+    } else {
+        el.className="on2";
+    }
+    bub1.fadeOut();
+    bub2.fadeOut();
+    bub3.fadeOut();
+}
+
+function togglestyle3(el){
+    if(el.className == "on3") {
+        el.className="off3";
+    } else {
+        el.className="on3";
+    }
+    bub1.fadeOut();
+    bub4.fadeOut();
+    bub3.fadeOut();
+}
+
+function togglestyle4(el){
+    if(el.className == "on4") {
+        el.className="off4";
+    } else {
+        el.className="on4";
+        bub1.fadeOut();
+    	bub2.fadeOut();
+    	bub4.fadeOut();
+    }
+}
