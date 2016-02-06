@@ -1,10 +1,13 @@
 <?php
 require('includes/init.php');
-error_reporting(E_ERROR | E_PARSE);
 
 
 function back_to_login() {
 	header('Location: index.php');
+}
+
+function send_to_chat() {
+	header('Location: chat/chat.php');
 }
 
 if(isset($_POST['user']) && isset($_POST['pass'])) {

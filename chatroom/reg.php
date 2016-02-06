@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
 $err = $_GET['err'];
 $err_msg = "";
 if($err!="") {

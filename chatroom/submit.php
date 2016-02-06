@@ -1,6 +1,5 @@
 <?php
 require('includes/config.php');
-error_reporting(E_ERROR | E_PARSE);
 
 $user = $_POST['user'];
 $enroll = $_POST['enroll'];

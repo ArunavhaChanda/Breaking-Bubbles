@@ -10,6 +10,7 @@ if(check_login()==true){
 	<link rel="stylesheet" type="text/css" href="images/regform.css">
 </head>
 <body>
+<<<<<<< HEAD:Chatroom-master/index.php
 	<table>
 	<tr>
 	<form action="chat/chat.php" method="POST" >

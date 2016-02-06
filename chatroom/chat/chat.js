@@ -28,7 +28,7 @@ function showOnline() {
 				if(onlineStatus=="yes") {
 					$("div#online_users_box").html("Loading...");
 				        refreshOnline();
-				        onlineTimer = setInterval("refreshOnline()",2500);	
+				        onlineTimer = setInterval("refreshOnline()",1000);	
 
 				}
 				else
