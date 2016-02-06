@@ -71,8 +71,8 @@
 		<section class = "stage" id = "pos4">
 			<figure class="ball bubbleBlue"><p class="title"> <?php echo $politicsHeadline ?> </p> </figure>
 		</section>
-
-		<!--<iframe src="Chatroom-master/index.php"></iframe> -->
+		<div id = "frame">
+		</div>
 
 		<div id="footer">
 			<table>
