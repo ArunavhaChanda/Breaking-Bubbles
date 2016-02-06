@@ -1,6 +1,6 @@
 <?php
 	/*SPORTS! */
-	$sportsText = "sports.csv";
+	$sportsText = "/Trending/sports.csv";
 	$sportsArray = array();
 	$handle = fopen($sportsText, "r");
 	while(! feof($handle))
@@ -12,7 +12,7 @@
 	fclose($handle);
 
 	/*Science */
-	$scienceText = "science.csv";
+	$scienceText = "/Trending/science.csv";
 	$scienceArray = array();
 	$handle = fopen($scienceText, "r");
 	while(! feof($handle))
@@ -24,7 +24,7 @@
 	fclose($handle);
 
 	/*Politics */
-	$politicsText = "politics.csv";
+	$politicsText = "/Trending/politics.csv";
 	$politicsArray = array();
 	$handle = fopen($politicsText, "r");
 	while(! feof($handle))
@@ -36,7 +36,7 @@
 	fclose($handle);
 
 	/*Business */
-	$businessText = "business.csv";
+	$businessText = "/Trending/business.csv";
 	$businessArray = array();
 	$handle = fopen($businessText, "r");
 	while(! feof($handle))
