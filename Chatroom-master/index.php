@@ -6,19 +6,23 @@ if(check_login()==true){
 ?>
 
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="images/regform.css">
+</head>
 <body>
-<table>
-<tr>
-<form action="chat/chat.php" method="POST" >
-<td>Enrollment:</td> <td><input type="text" name="user"></td>
-</tr>
-<tr>
-<td>Password:</td> <td><input type="password" name="pass"></td>
-</tr>
-<tr>
-<td></td><td><input type="submit" name="login" value="login"> or <a href='reg.php'>SignUp</a></td>
-</tr>
-</form>
-</table>
+	<table>
+	<tr>
+	<form action="chat/chat.php" method="POST" >
+	<td><input type='text' name='user' class = "pure-form-message-inline" placeholder="Enrollment No."/></td>
+	</tr>
+	<tr>
+	<td><input type='text' name='user' class = "pure-form-message-inline" placeholder="Password"/></td>	</tr>
+
+	<tr>
+		<td><input type='submit' name="login" value="Login" class = "pure-form-message"/>        <a href='reg.php' class = "pure-form-message">Sign Up</a></td>
+	</tr>
+
+	</form>
+	</table>
 </body>
 </html>

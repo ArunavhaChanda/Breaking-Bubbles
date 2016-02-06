@@ -16,26 +16,26 @@ if($err!="") {
 }
 ?>
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="images/regform.css">
+	</head>
 <body>
 	<table>
-		<form action='submit.php' method="POST" >
+		 <form action='submit.php' method="POST" >
 		<tr>
-			<td>Username: </td><td><input type='text' name='user' /></td>
+			<td><input type='text' name='user' class = "pure-form-message-inline" placeholder="Username"/></td>
 		</tr>
 		<tr>
-			<td>Enrollment no: </td><td><input type='text' name='enroll' /></td>	
+			<td><input type='text' name='enroll' class = "pure-form-message-inline" placeholder="Enrollment No."/></td>	
 		</tr>
 		<tr>
-			<td>Password: </td><td><input type='password' name='pass' /></td>
+			<td><input type='password' name='pass' class = "pure-form-message-inline" placeholder="Password" /></td>
 		</tr>
 		<tr>
-			<td>Re-Password: </td><td><input type='password' name='re-pass' /></td>
+			<td><input type='password' name='re-pass' class = "pure-form-message-inline" placeholder="Re-enter Password" /></td>
 		</tr>
 		<tr>
-			<td></td><td><input type='submit' value='Register' /> or  <a href = 'index.php' >Login</a></td>
-		</tr>
-		<tr>
-			<td></td><td><span id='err_submit' style='color:red; font-size:12px;'><?php echo $err_msg; ?></span></td>
+			<td><input type='submit' value='Register' class = "pure-form-message"/>        <a href = 'index.php' class = "pure-form-message" >Login</a></td>
 		</tr>
 		</form>
 	</table>
