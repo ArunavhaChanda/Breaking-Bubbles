@@ -173,8 +173,9 @@ body {
 }
 
 .frame{
-  position: absolute;
-  left: 100px;
-  top: 100px;
+  position: fixed;
+  height: 95%;
+  width: 65%;
+  margin-left: 370px;
   z-index: 3;
 }
